@@ -1,20 +1,15 @@
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<h1>Home Page</h1>} />
+        <Route path="/about" element={<h1>About Page</h1>} />
+        <Route path="/upwomxn" element={<h1>About Upwomxn</h1>} />
+        <Route path="/submit" element={<h1>Submit</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
