@@ -1,9 +1,12 @@
-import Home from "./content.js";
+import { useState } from "react";
+import { homeContent } from "./content.js";
+
 function Home() {
+  const [content, setContent] = useState(homeContent.EN);
   return (
     <>
-      <div> </div>
-      <p>Welcome to the Home Page!</p>
+      <div class="highlight">{content.notification}</div>
+      {content.content}
     </>
   );
 }

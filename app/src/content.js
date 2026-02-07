@@ -3,10 +3,10 @@ function Home(notification, content) {
   this.content = content;
 }
 
-const homeContent = {
-  HomeEN: new Home(
+export const homeContent = {
+  EN: new Home(
     "Notification in English",
     "This is the content of the home page.",
   ),
-  HomeCN: new Home("通知", "这是主页的内容。"),
+  CN: new Home("通知", "这是主页的内容。"),
 };
