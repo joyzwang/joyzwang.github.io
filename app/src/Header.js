@@ -32,8 +32,12 @@ function Header() {
           Between the Lines Magazine{" "}
         </Link>
 
-        <Link className='nav-label' to="/about">{content.about}</Link>
-        <Link className='nav-label' to="/submissions">{content.submissions}</Link>
+        <Link className="nav-label" to="/about">
+          {content.about}
+        </Link>
+        <Link className="nav-label" to="/submit">
+          {content.submissions}
+        </Link>
 
         <input
           type="button"

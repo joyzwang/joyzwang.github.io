@@ -44,3 +44,18 @@ aboutContent.cn = {
   heading2: "关于联合骄傲女性",
   p2: "联合骄傲女性是一个非营利组织。它的主要目标是为多元化群体女孩提供安全、勇敢、协作和创造性的空间，使她们作为个人成长，与社区成员联系，并组织集体行动，推动包容性社会变革。",
 };
+
+//Submission Page Content
+export const submissionContent = new Page();
+submissionContent.en = {
+  heading1: "Submissions",
+  p1: "Submissions for the 2027 Between the Lines issue will open in August 2026. Please revisit this page at that time for the submission link.",
+  heading2: "Submissions FAQs",
+  p2: "Who can submit? Anyone who identifies as a queer Chinese womxn is welcome to submit!",
+};
+submissionContent.cn = {
+  heading1: "投稿",
+  p1: "2027年 《言外之意》 的投稿将在 2026年8月 开放。届时请再次访问此页面以获取投稿链接。",
+  heading2: "投稿常见问题",
+  p2: "谁可以投稿? 只要认同自己是酷儿华人女性，都欢迎投稿。",
+};

@@ -1,11 +1,10 @@
-import { aboutContent, Languages } from "./content.js";
+import { submissionContent } from "./content.js";
 import { useOutletContext } from "react-router-dom";
 
-function About({ language }) {
+function Submissions({ language }) {
   const pageLanguage = useOutletContext(language);
 
-  const content =
-    pageLanguage === Languages.cn ? aboutContent.cn : aboutContent.en;
+  const content = submissionContent[pageLanguage];
 
   return (
     <>
@@ -17,4 +16,4 @@ function About({ language }) {
   );
 }
 
-export default About;
+export default Submissions;
