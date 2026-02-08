@@ -35,7 +35,7 @@ function Header() {
         <Link className="nav-label" to="/about">
           {content.about}
         </Link>
-        <Link className="nav-label" to="/submit">
+        <Link className="nav-label" to="/submissions">
           {content.submissions}
         </Link>
 
