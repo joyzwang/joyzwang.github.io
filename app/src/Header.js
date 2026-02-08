@@ -1,24 +1,20 @@
 import { Outlet } from "react-router-dom";
 import { Languages } from "./content";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Header() {
   var [language, setLanguage] = useState(Languages.en);
 
-  useEffect(() => {
-    var currentLanguage = localStorage.getItem("language");
-    console.log(currentLanguage);
-    if (!currentLanguage) {
-        setLanguage(currentLanguage);
-    }
-  }, []);
-
   function toggleLanguage() {
     const currentLanguage = localStorage.getItem("language");
+
+    var updatedLanguage;
     currentLanguage === Languages.en
-      ? localStorage.setItem("language", Languages.cn)
-      : localStorage.setItem("language", Languages.en);
-    setLanguage(localStorage.getItem("language"));
+      ? (updatedLanguage = Languages.cn)
+      : (updatedLanguage = Languages.en);
+
+    localStorage.setItem("language", updatedLanguage);
+    setLanguage(updatedLanguage);
   }
 
   return (
@@ -28,7 +24,7 @@ function Header() {
         <input
           type="button"
           id="toggle-language"
-          value="Switch"
+          value="🌐"
           onClick={() => toggleLanguage()}
         />
       </div>
