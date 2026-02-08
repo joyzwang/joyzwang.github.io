@@ -11,6 +11,7 @@ function Home({ language }) {
     <>
       <div className="highlight">{content.notification}</div>
       {content.content}
+      <div className="pdf">[PDF Reader]</div>
     </>
   );
 }
