@@ -1,8 +1,12 @@
-import { useState } from "react";
-import { homeContent } from "./content.js";
+import { homeContent, Languages } from "./content.js";
+import { useOutletContext } from "react-router-dom";
 
-function Home() {
-  const [content, setContent] = useState(homeContent.en);
+function Home({ language }) {
+  const pageLanguage = useOutletContext(language);
+
+  const content =
+    pageLanguage === Languages.cn ? homeContent.cn : homeContent.en;
+
   return (
     <>
       <div className="highlight">{content.notification}</div>

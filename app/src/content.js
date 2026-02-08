@@ -1,17 +1,19 @@
 export const Languages = {
-  English: "en",
-  Chinese: "cn",
+  en: "en",
+  cn: "cn",
 };
 
-function Home(notification, content) {
-  this.notification = notification;
-  this.content = content;
+function Page(en, cn) {
+  this.en = en;
+  this.cn = cn;
 }
 
-export const homeContent = {
-  en: new Home(
-    "Notification in English",
-    "This is the content of the home page.",
-  ),
-  cn: new Home("通知", "这是主页的内容。"),
+export const homeContent = new Page();
+homeContent.en = {
+  notification: "Welcome to the BTLM website!",
+  content: "This is the home page content in English.",
+};
+homeContent.cn = {
+  notification: "欢迎来到BTLM网站！",
+  content: "这是主页内容的中文版本。",
 };

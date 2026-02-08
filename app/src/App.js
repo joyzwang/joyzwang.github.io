@@ -10,7 +10,6 @@ function App() {
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />
           <Route path="about" element={<h1>About Page</h1>} />
-          <Route path="upwomxn" element={<h1>About Upwomxn</h1>} />
           <Route path="submit" element={<h1>Submit</h1>} />
         </Route>
       </Routes>
