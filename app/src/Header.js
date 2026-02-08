@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Languages } from "./content";
 import { useState } from "react";
+import "./style.css";
 
 function Header() {
   var [language, setLanguage] = useState(Languages.en);
