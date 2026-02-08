@@ -1,0 +1,14 @@
+{
+  "main": {
+    "about": {
+      "en": "About",
+      "cn": "关于我们",
+      "link": "/about"
+    },
+    "submit": {
+      "en": "Submissions",
+      "cn": "投稿",
+      "link": "/submissions"
+    }
+  }
+}
