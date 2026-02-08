@@ -2,10 +2,10 @@ import { useState } from "react";
 import { homeContent } from "./content.js";
 
 function Home() {
-  const [content, setContent] = useState(homeContent.EN);
+  const [content, setContent] = useState(homeContent.en);
   return (
     <>
-      <div class="highlight">{content.notification}</div>
+      <div className="highlight">{content.notification}</div>
       {content.content}
     </>
   );
