@@ -1,11 +1,8 @@
-import { aboutContent, Languages } from "./content.js";
+import { aboutContent } from "./content.js";
 import { useOutletContext } from "react-router-dom";
 
 function About({ language }) {
-  const pageLanguage = useOutletContext(language);
-
-  const content =
-    pageLanguage === Languages.cn ? aboutContent.cn : aboutContent.en;
+  const content = aboutContent[useOutletContext(language)];
 
   return (
     <>

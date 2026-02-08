@@ -2,9 +2,7 @@ import { submissionContent } from "./content.js";
 import { useOutletContext } from "react-router-dom";
 
 function Submissions({ language }) {
-  const pageLanguage = useOutletContext(language);
-
-  const content = submissionContent[pageLanguage];
+  const content = submissionContent[useOutletContext(language)];
 
   return (
     <>
