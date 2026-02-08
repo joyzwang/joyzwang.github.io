@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { Languages } from "./content";
 import { useState } from "react";
 import "./style.css";
@@ -21,7 +21,10 @@ function Header() {
   return (
     <>
       <div className="header">
-        Between the Lines Magazine
+        <Link className='site-title' to='/'> Between the Lines Magazine </Link>
+
+        <Link to='/about'> About </Link>
+
         <input
           type="button"
           id="toggle-language"

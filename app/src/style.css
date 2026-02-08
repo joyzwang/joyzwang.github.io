@@ -7,3 +7,8 @@
     padding: 1rem 0rem;
     background-color: thistle;
 }
+
+.site-title {
+    font-size: large;
+    padding-right: 3rem;
+}

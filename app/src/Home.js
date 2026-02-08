@@ -10,7 +10,7 @@ function Home({ language }) {
   return (
     <>
       <div className="highlight">{content.notification}</div>
-      {content.content}
+      <h2>{content.heading}</h2>
       <div className="pdf">[PDF Reader]</div>
     </>
   );
