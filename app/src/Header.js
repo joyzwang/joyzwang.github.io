@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import { Languages } from "./content";
+import { Languages, navbarContent } from "./content";
 import { useState } from "react";
 import "./style.css";
 
@@ -8,7 +8,6 @@ function Header() {
   if (defaultLanguage in Languages === false) {
     defaultLanguage = Languages.en;
   }
-
   var [language, setLanguage] = useState(defaultLanguage);
 
   function toggleLanguage() {
@@ -23,6 +22,8 @@ function Header() {
     setLanguage(updatedLanguage);
   }
 
+  const content = navbarContent[language];
+
   return (
     <>
       <div className="header">
@@ -31,7 +32,8 @@ function Header() {
           Between the Lines Magazine{" "}
         </Link>
 
-        <Link to="/about"> About </Link>
+        <Link className='nav-label' to="/about">{content.about}</Link>
+        <Link className='nav-label' to="/submissions">{content.submissions}</Link>
 
         <input
           type="button"

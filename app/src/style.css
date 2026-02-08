@@ -1,14 +1,19 @@
-.header{
-    padding: 2.5rem 0rem;
-    background-color: bisque;
+.header {
+  padding: 2.5rem 0rem;
+  background-color: bisque;
 }
 
-.highlight{
-    padding: 1rem 0rem;
-    background-color: thistle;
+.highlight {
+  padding: 1rem 0rem;
+  background-color: thistle;
+}
+
+.nav-label{
+  padding-left: .5rem;
+  padding-right: .5rem;
 }
 
 .site-title {
-    font-size: large;
-    padding-right: 3rem;
+  font-size: large;
+  padding-right: 3rem;
 }
