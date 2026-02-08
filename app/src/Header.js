@@ -4,7 +4,12 @@ import { useState } from "react";
 import "./style.css";
 
 function Header() {
-  var [language, setLanguage] = useState(Languages.en);
+  var defaultLanguage = localStorage.getItem("language");
+  if (defaultLanguage in Languages === false) {
+    defaultLanguage = Languages.en;
+  }
+
+  var [language, setLanguage] = useState(defaultLanguage);
 
   function toggleLanguage() {
     const currentLanguage = localStorage.getItem("language");
@@ -21,9 +26,12 @@ function Header() {
   return (
     <>
       <div className="header">
-        <Link className='site-title' to='/'> Between the Lines Magazine </Link>
+        <Link className="site-title" to="/">
+          {" "}
+          Between the Lines Magazine{" "}
+        </Link>
 
-        <Link to='/about'> About </Link>
+        <Link to="/about"> About </Link>
 
         <input
           type="button"
