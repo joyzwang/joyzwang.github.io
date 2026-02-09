@@ -23,7 +23,7 @@ navbarContent.cn = {
 export const homeContent = new Page();
 homeContent.en = {
   notification: "Upcoming Dates",
-  heading: "Read the current issue of Between the Lines:",
+  heading: "<i> Read the current issue of Between the Lines: </i>",
 };
 homeContent.cn = {
   notification: "重要日期",
