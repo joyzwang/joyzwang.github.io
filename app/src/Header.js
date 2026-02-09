@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import { Languages, navbarContent } from "./content";
 import { useEffect, useState } from "react";
-import { getMenuInLanguage } from "./jsonparser";
+import { getMenuInLanguage } from "./utils/getMenuInLanguage";
 import "./style.css";
 
 function Header() {

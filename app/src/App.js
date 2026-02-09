@@ -3,8 +3,6 @@ import Home from "./Home";
 import About from "./About";
 import Header from "./Header";
 import Submissions from "./Submissions";
-import { useEffect, useState } from "react";
-import { parseMenu } from "./jsonparser";
 
 function App() {
   return (

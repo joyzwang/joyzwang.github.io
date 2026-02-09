@@ -1,4 +1,4 @@
-import menu from "./content/menu.json";
+import menu from "../content/menu.json";
 
 function menuItem(label, link) {
   this.label = label;
