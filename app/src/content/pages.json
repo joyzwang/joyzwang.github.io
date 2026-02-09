@@ -13,26 +13,26 @@
   },
   "about": {
     "en": {
-      "title": "",
-      "highlight": "",
-      "body": ""
+      "title": "1",
+      "highlight": "2",
+      "body": "3"
     },
     "cn": {
-      "title": "",
-      "highlight": "",
-      "body": ""
+      "title": "4",
+      "highlight": "5",
+      "body": "6"
     }
   },
   "submit": {
     "en": {
-      "title": "",
-      "highlight": "",
-      "body": ""
+      "title": "7",
+      "highlight": "8",
+      "body": "9"
     },
     "cn": {
-      "title": "",
-      "highlight": "",
-      "body": ""
+      "title": "10",
+      "highlight": "11",
+      "body": "12"
     }
   }
 }
