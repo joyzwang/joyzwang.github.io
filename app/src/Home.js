@@ -1,15 +1,21 @@
 import { homeContent } from "./content.js";
 import { useOutletContext } from "react-router-dom";
+import { getPageInLanguage } from "./utils/getPageInLanguage.js";
 
 function Home({ language }) {
-  const content = homeContent[useOutletContext(language)];
+  const content = getPageInLanguage('home',useOutletContext(language));
 
-  const markup = { __html: content.heading };
+  for (const key in content) {
+    if ( content[key] === undefined) {
+      content[key] = '';
+    }
+  }
 
   return (
     <>
-      <div className="highlight">{content.notification}</div>
-      <h2 dangerouslySetInnerHTML={markup} />
+      <div className="highlight" dangerouslySetInnerHTML={{__html: content.highlight}}></div>
+      <h2 dangerouslySetInnerHTML={{__html: content.title}} />
+      <div className="body" dangerouslySetInnerHTML={{__html: content.body}}></div>
       <div className="pdf">[PDF Reader]</div>
     </>
   );
