@@ -14,8 +14,12 @@ export function getPageInLanguage(title, language) {
   }
 
   if (!(language in Languages)) {
-      language = Languages.en;
-    }
-  
-  return new Page(thisPage[language].title, thisPage[language].highlight, thisPage[language].body);
+    language = Languages.en;
+  }
+
+  return new Page(
+    thisPage[language].title,
+    thisPage[language].highlight,
+    thisPage[language].body,
+  );
 }
