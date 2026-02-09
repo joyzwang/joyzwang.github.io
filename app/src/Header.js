@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
-import { Languages, navbarContent } from "./content";
-import { useContext, useEffect, useState } from "react";
-import { getMenuInLanguage } from "./utils/getMenuInLanguage";
+import { Languages } from "./content";
+import { useEffect, useState } from "react";
+import NavMenu from "./NavMenu";
 import "./style.css";
 
 function Header() {
@@ -45,25 +45,9 @@ function Header() {
           onClick={() => toggleLanguage()}
         />
       </div>
-      
+
       <Outlet context={language} />
     </>
   );
 }
 export default Header;
-
-function NavMenu(language) {
-  const menu = getMenuInLanguage(language.context);
-
-  return (
-    <>
-      {menu.map((item) => {
-        return (
-          <li key={item.link}>
-            <Link to={item.link}>{item.label}</Link>
-          </li>
-        );
-      })}
-    </>
-  );
-}
