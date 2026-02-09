@@ -1,0 +1,38 @@
+{
+  "home": {
+    "en": {
+      "title": "home title",
+      "highlight": "home highlight",
+      "body": "home body"
+    },
+    "cn": {
+      "title": "home cn",
+      "highlight": "home highlight cn",
+      "body": "home body cn"
+    }
+  },
+  "about": {
+    "en": {
+      "title": "",
+      "highlight": "",
+      "body": ""
+    },
+    "cn": {
+      "title": "",
+      "highlight": "",
+      "body": ""
+    }
+  },
+  "submit": {
+    "en": {
+      "title": "",
+      "highlight": "",
+      "body": ""
+    },
+    "cn": {
+      "title": "",
+      "highlight": "",
+      "body": ""
+    }
+  }
+}
