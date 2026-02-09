@@ -5,12 +5,7 @@ import { getMenuInLanguage } from "./utils/getMenuInLanguage";
 import "./style.css";
 
 function Header() {
-  var defaultLanguage = localStorage.getItem("language");
-  if (defaultLanguage in Languages === false) {
-    defaultLanguage = Languages.en;
-  }
-
-  var [language, setLanguage] = useState(defaultLanguage);
+  var [language, setLanguage] = useState(getDefaultLanguage());
 
   function toggleLanguage() {
     const currentLanguage = localStorage.getItem("language");
@@ -58,6 +53,7 @@ function Header() {
     </>
   );
 }
+export default Header;
 
 function navMenu(menu, language) {
   var menuMarkdown = "";
@@ -71,4 +67,8 @@ function navMenu(menu, language) {
   return;
 }
 
-export default Header;
+function getDefaultLanguage() {
+  var defaultLanguage = localStorage.getItem("language");
+  return (defaultLanguage in Languages === false) ? Languages.en : defaultLanguage;
+}
+
