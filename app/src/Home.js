@@ -1,8 +1,9 @@
+import { cleanPage } from "./utils/cleanPage";
 import { useOutletContext } from "react-router-dom";
 import { getPageInLanguage } from "./utils/getPageInLanguage.js";
 
 function Home({ language }) {
-  const content = getPageInLanguage("home", useOutletContext(language));
+  var content = getPageInLanguage("home", useOutletContext(language));
 
   content = cleanPage(content);
 

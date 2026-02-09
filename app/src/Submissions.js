@@ -1,9 +1,9 @@
-import { cleanPage } from "./utils/cleanHTML";
+import { cleanPage } from "./utils/cleanPage";
 import { getPageInLanguage } from "./utils/getPageInLanguage";
 import { useOutletContext } from "react-router-dom";
 
 function Submissions({ language }) {
-  const content = getPageInLanguage("submissions", useOutletContext(language));
+  var content = getPageInLanguage("submissions", useOutletContext(language));
 
   content = cleanPage(content);
 

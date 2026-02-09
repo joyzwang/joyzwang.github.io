@@ -5,7 +5,7 @@ export function cleanPage(page) {
     if (page[key] === undefined) {
       page[key] = "";
     }
-    page[key] = sanitized(object[key]);
+    page[key] = sanitize(page[key]);
   }
   return page;
 }
