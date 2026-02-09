@@ -1,13 +1,13 @@
 import DOMPurify from "dompurify";
 
-export function cleanHTML(object) {
-  for (const key in object) {
-      if (object[key] === undefined) {
-        object[key] = "";
+export function cleanPage(page) {
+  for (const key in page) {
+      if (page[key] === undefined) {
+        page[key] = "";
       }
-      object[key] = sanitized(object[key]);
+      page[key] = sanitized(object[key]);
     }
-  return object;
+  return page;
 }
 
 function sanitize(html) {
