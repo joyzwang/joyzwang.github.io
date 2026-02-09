@@ -1,15 +1,26 @@
-import { aboutContent } from "./content.js";
+import { getPageInLanguage } from "./utils/getPageInLanguage";
 import { useOutletContext } from "react-router-dom";
 
 function About({ language }) {
-  const content = aboutContent[useOutletContext(language)];
+  const content = getPageInLanguage("about", useOutletContext(language));
+
+  for (const key in content) {
+    if (content[key] === undefined) {
+      content[key] = "";
+    }
+  }
 
   return (
     <>
-      <h2> {content.heading1} </h2>
-      <p>{content.p1} </p>
-      <h2> {content.heading2} </h2>
-      <p>{content.p2} </p>
+      <div
+        className="highlight"
+        dangerouslySetInnerHTML={{ __html: content.highlight }}
+      ></div>
+      <h2 dangerouslySetInnerHTML={{ __html: content.title }} />
+      <div
+        className="body"
+        dangerouslySetInnerHTML={{ __html: content.body }}
+      ></div>
     </>
   );
 }
