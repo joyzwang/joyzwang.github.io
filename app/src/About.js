@@ -4,11 +4,7 @@ import { useOutletContext } from "react-router-dom";
 function About({ language }) {
   const content = getPageInLanguage("about", useOutletContext(language));
 
-  for (const key in content) {
-    if (content[key] === undefined) {
-      content[key] = "";
-    }
-  }
+  content = cleanPage(content);
 
   return (
     <>

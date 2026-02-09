@@ -1,14 +1,11 @@
+import { cleanPage } from "./utils/cleanHTML";
 import { getPageInLanguage } from "./utils/getPageInLanguage";
 import { useOutletContext } from "react-router-dom";
 
 function Submissions({ language }) {
   const content = getPageInLanguage("submissions", useOutletContext(language));
 
-  for (const key in content) {
-    if (content[key] === undefined) {
-      content[key] = "";
-    }
-  }
+  content = cleanPage(content);
 
   return (
     <>
