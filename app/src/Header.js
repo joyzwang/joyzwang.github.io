@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import { Languages, navbarContent } from "./content";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getMenuInLanguage } from "./jsonparser";
 import "./style.css";
 
 function Header() {
@@ -8,6 +9,7 @@ function Header() {
   if (defaultLanguage in Languages === false) {
     defaultLanguage = Languages.en;
   }
+
   var [language, setLanguage] = useState(defaultLanguage);
 
   function toggleLanguage() {
@@ -24,6 +26,10 @@ function Header() {
 
   const content = navbarContent[language];
 
+  useEffect(() => {
+    getMenuInLanguage(language);
+  }, []);
+
   return (
     <>
       <div className="header">
@@ -39,6 +45,8 @@ function Header() {
           {content.submissions}
         </Link>
 
+        <div> </div>
+
         <input
           type="button"
           id="toggle-language"
@@ -49,6 +57,18 @@ function Header() {
       <Outlet context={language} />
     </>
   );
+}
+
+function navMenu(menu, language) {
+  var menuMarkdown = "";
+  if (!(language in Languages)) {
+    language = Languages.en;
+  }
+  for (let i = 0; i < menu.length; i++) {
+    menuMarkdown += `<Link className="nav-label" to=${menu[i].link}>${menu[i].language}</Link>`;
+  }
+
+  return;
 }
 
 export default Header;
