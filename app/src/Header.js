@@ -16,7 +16,7 @@ function Header() {
 
   function toggleLanguage() {
     const currentLanguage = localStorage.getItem("language");
-    const updatedLanguage = currentLanguage in Languages ? currentLanguage : Languages.en;
+    const updatedLanguage = (currentLanguage === Languages.en) ? Languages.cn : Languages.en;
 
     localStorage.setItem("language", updatedLanguage);
     setLanguage(updatedLanguage);
