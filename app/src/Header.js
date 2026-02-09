@@ -1,11 +1,18 @@
 import { Outlet, Link } from "react-router-dom";
 import { Languages, navbarContent } from "./content";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { getMenuInLanguage } from "./utils/getMenuInLanguage";
 import "./style.css";
 
 function Header() {
-  var [language, setLanguage] = useState(getDefaultLanguage());
+  var [language, setLanguage] = useState(Languages.en);
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage && storedLanguage in Languages) {
+      setLanguage(localStorage.getItem("language"));
+    }
+  }, []);
 
   function toggleLanguage() {
     const currentLanguage = localStorage.getItem("language");
@@ -19,12 +26,6 @@ function Header() {
     setLanguage(updatedLanguage);
   }
 
-  const content = navbarContent[language];
-
-  useEffect(() => {
-    getMenuInLanguage(language);
-  }, []);
-
   return (
     <>
       <div className="header">
@@ -33,15 +34,10 @@ function Header() {
           Between the Lines Magazine{" "}
         </Link>
 
-        <Link className="nav-label" to="/about">
-          {content.about}
-        </Link>
-        <Link className="nav-label" to="/submissions">
-          {content.submissions}
-        </Link>
+        <NavMenu context={language} />
+      </div>
 
-        <div> </div>
-
+      <div>
         <input
           type="button"
           id="toggle-language"
@@ -49,26 +45,25 @@ function Header() {
           onClick={() => toggleLanguage()}
         />
       </div>
+      
       <Outlet context={language} />
     </>
   );
 }
 export default Header;
 
-function navMenu(menu, language) {
-  var menuMarkdown = "";
-  if (!(language in Languages)) {
-    language = Languages.en;
-  }
-  for (let i = 0; i < menu.length; i++) {
-    menuMarkdown += `<Link className="nav-label" to=${menu[i].link}>${menu[i].language}</Link>`;
-  }
+function NavMenu(language) {
+  const menu = getMenuInLanguage(language.context);
 
-  return;
+  return (
+    <>
+      {menu.map((item) => {
+        return (
+          <li key={item.link}>
+            <Link to={item.link}>{item.label}</Link>
+          </li>
+        );
+      })}
+    </>
+  );
 }
-
-function getDefaultLanguage() {
-  var defaultLanguage = localStorage.getItem("language");
-  return (defaultLanguage in Languages === false) ? Languages.en : defaultLanguage;
-}
-

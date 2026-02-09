@@ -8,7 +8,8 @@ function menuItem(label, link) {
 export function getMenuInLanguage(language) {
   var output = [];
   for (let i = 0; i < menu.length; i++) {
-    const item = new menuItem(menu[i][language], menu[i].link);
+    const thisMenuItem = menu[i];
+    const item = new menuItem(thisMenuItem[`${language}`], thisMenuItem.link);
     output.push(item);
   }
   return output;
