@@ -16,11 +16,7 @@ function Header() {
 
   function toggleLanguage() {
     const currentLanguage = localStorage.getItem("language");
-
-    var updatedLanguage;
-    currentLanguage === Languages.en
-      ? (updatedLanguage = Languages.cn)
-      : (updatedLanguage = Languages.en);
+    const updatedLanguage = currentLanguage in Languages ? currentLanguage : Languages.en;
 
     localStorage.setItem("language", updatedLanguage);
     setLanguage(updatedLanguage);
@@ -37,7 +33,7 @@ function Header() {
         <NavMenu context={language} />
       </div>
 
-      <div>
+      <div className='language-toggle'>
         <input
           type="button"
           id="toggle-language"
