@@ -1,5 +1,5 @@
 import menu from "../content/menu.json";
-import { Languages } from "./languages";
+import { Languages, defaultLanguage } from "./languages";
 
 function menuItem(label, link) {
   this.label = label;
@@ -10,7 +10,7 @@ export function getMenuInLanguage(language) {
   var output = [];
 
   if (!(language in Languages)) {
-    language = Languages.en;
+    language = defaultLanguage;
   }
 
   for (let i = 0; i < menu.length; i++) {

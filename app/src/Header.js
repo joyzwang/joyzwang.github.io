@@ -1,11 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
-import { Languages } from "./utils/languages";
+import { Languages, defaultLanguage } from "./utils/languages";
 import { useEffect, useState } from "react";
 import NavMenu from "./NavMenu";
 import "./style.css";
 
 function Header() {
-  var [language, setLanguage] = useState(Languages.en);
+  var [language, setLanguage] = useState(defaultLanguage);
 
   useEffect(() => {
     const storedLanguage = localStorage.getItem("language");

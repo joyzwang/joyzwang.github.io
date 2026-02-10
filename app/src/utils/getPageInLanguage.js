@@ -1,5 +1,5 @@
 import pages from "../content/pages.json";
-import { Languages } from "./languages";
+import { Languages, defaultLanguage } from "./languages";
 
 function Page(title, highlight, body) {
   this.title = title;
@@ -14,7 +14,7 @@ export function getPageInLanguage(title, language) {
   }
 
   if (!(language in Languages)) {
-    language = Languages.en;
+    language = defaultLanguage;
   }
 
   return new Page(
