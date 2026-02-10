@@ -1,5 +1,5 @@
 import pages from "../content/pages.json";
-import { Languages } from "../content";
+import { Languages } from "./languages";
 
 function Page(title, highlight, body) {
   this.title = title;

@@ -1,5 +1,5 @@
 import menu from "../content/menu.json";
-import { Languages } from "../content";
+import { Languages } from "./languages";
 
 function menuItem(label, link) {
   this.label = label;

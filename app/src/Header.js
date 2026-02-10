@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import { Languages } from "./content";
+import { Languages } from "./utils/languages";
 import { useEffect, useState } from "react";
 import NavMenu from "./NavMenu";
 import "./style.css";
