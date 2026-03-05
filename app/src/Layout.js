@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import NavMenu from "./NavMenu";
 import "./style.css";
 
-function Header() {
+function Layout() {
   var [language, setLanguage] = useState(defaultLanguage);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ function Header() {
   }
 
   return (
-    <>
+    <div className="app-container">
       <div className="header">
         <Link className="site-title" to="/">
           {" "}
@@ -44,7 +44,7 @@ function Header() {
       </div>
 
       <Outlet context={language} />
-    </>
+    </div>
   );
 }
-export default Header;
+export default Layout;
