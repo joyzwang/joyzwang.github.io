@@ -16,7 +16,9 @@ function Home({ language }) {
         className="body"
         dangerouslySetInnerHTML={{ __html: content.body }}
       ></div>
-      <div className="pdf">[PDF Reader]</div>
+      <div className="pdf">
+        <embed src="pdf/test.pdf" type="application/pdf" width="40%" height="600px"/>
+      </div>
     </>
   );
 }
