@@ -1,38 +1,38 @@
 {
   "home": {
     "en": {
-      "title": "home title",
-      "highlight": "home highlight en",
-      "body": "home body"
+      "title": "Read the current issue of <i>Between the Lines</i>",
+      "highlight": "<b>Upcoming Dates</b><ul><li>June 2026: Printed copies will be available through United Proud Womxn’s Pride Month merch sale — follow @upwomxn on Instagram for more information!</li><li>August 2026: Submissions for the 2027 issue open</li></ul>",
+      "body": ""
     },
     "cn": {
-      "title": "home cn",
-      "highlight": "home highlight cn",
-      "body": "home body cn"
+      "title": "阅读《言外之意》当前一期",
+      "highlight": "<b>重要日期</b><ul> <li> <b>2026年6月：</b>《言外之意》的印刷版将于联合骄傲女性的骄傲月周边一同发售 — 欢迎在 Instagram 上关注 @upwomxn 获取更多资讯！ </li> <li><b>2026年8月:</b> 2027年刊的投稿通道开启</li></ul>",
+      "body": ""
     }
   },
   "about": {
     "en": {
-      "title": "1",
-      "highlight": "2",
-      "body": "3"
+      "title": "About <i>Between the Lines</i>",
+      "highlight": "",
+      "body": "<p><i>Between the Lines</i> is a bilingual literary and arts zine by and for Chinese queer womxn—those living within, across, and beyond borders. It centers the stories of individuals who have long had to live, love, and resist in subtext—navigating social stigma, political censorship, and cultural marginalization both in their homelands and diasporas. It explores the liminal geographies that they often inhabit. It holds space for the words, images, and ideas that survive between the lines.</p><p>This project is published by <a href='https://www.upwomxn.org/'>United Proud Womxn</a>, a nonprofit organization committed to empowering sexual minority womxn.</p> <br/> <h3>About United Proud Womxn</h3>United Proud Womxn is a non-profit organization dedicated to empowering sexual minority womxn by creating safe, brave, collaborative, and creative spaces to grow as individuals, connect with community, and organize collective actions for inclusive social change."
     },
     "cn": {
-      "title": "4",
-      "highlight": "5",
-      "body": "6"
+      "title": "关于《言外之意》",
+      "highlight": "",
+      "body": "<p>《言外之意》 是一本由<b>华人酷儿女性</b>主创的双语文学与艺术杂志，立足边界，写在缝隙，讲述那些不被允许直说的故事。它由非营利组织<b>联合骄傲女性</b>发起，致力于支持性少数女性的表达与自主。许多声音被迫低语，被遮蔽、被删改，被夹在词与词之间的空白中。我们倾听它们，也愿让它们发出回响。</p><p>这里是属于她们的语言地带，是在沉默与否定之外，继续存在、思考与热爱的空间。</p> <br/> <h3>关于联合骄傲女性 </h3><p>联合骄傲女性是一个非营利组织。它的主要目标是为多元化群体女孩提供安全、勇敢、协作和创造性的空间，使她们作为个人成长，与社区成员联系，并组织集体行动，推动包容性社会变革。</p>"
     }
   },
   "submissions": {
     "en": {
-      "title": "7",
-      "highlight": "8",
-      "body": "9"
+      "title": "Submissions",
+      "highlight": "",
+      "body": "Submissions for the 2027 Between the Lines issue will open in August 2026. Please revisit this page at that time for the submission link."
     },
     "cn": {
-      "title": "10",
-      "highlight": "11",
-      "body": "12"
+      "title": "投稿页",
+      "highlight": "",
+      "body": "2027年 《言外之意》 的投稿将在 2026年8月 开放。届时请再次访问此页面以获取投稿链接。"
     }
   }
 }

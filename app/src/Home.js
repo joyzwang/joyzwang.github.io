@@ -8,8 +8,6 @@ function Home({ language }) {
 
   content = cleanPage(content);
 
-  console.log(content.highlight);
-
   return (
     <>
       <Highlight content={content.highlight} />
