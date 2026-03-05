@@ -1,12 +1,12 @@
 {
   "home": {
     "en": {
-      "title": "Read the current issue of <i>Between the Lines</i>",
+      "title": "<i>Between the Lines</i>",
       "highlight": "<b>Upcoming Dates</b><ul><li>June 2026: Printed copies will be available through United Proud Womxn’s Pride Month merch sale — follow @upwomxn on Instagram for more information!</li><li>August 2026: Submissions for the 2027 issue open</li></ul>",
       "body": ""
     },
     "cn": {
-      "title": "阅读《言外之意》当前一期",
+      "title": "《言外之意》",
       "highlight": "<b>重要日期</b><ul> <li> <b>2026年6月：</b>《言外之意》的印刷版将于联合骄傲女性的骄傲月周边一同发售 — 欢迎在 Instagram 上关注 @upwomxn 获取更多资讯！ </li> <li><b>2026年8月:</b> 2027年刊的投稿通道开启</li></ul>",
       "body": ""
     }
@@ -26,13 +26,13 @@
   "submissions": {
     "en": {
       "title": "Submissions",
-      "highlight": "",
-      "body": "Submissions for the 2027 Between the Lines issue will open in August 2026. Please revisit this page at that time for the submission link."
+      "highlight": "Submissions for the 2027 Between the Lines issue will open in August 2026. Please revisit this page at that time for the submission link. ",
+      "body": "<h3>Submissions FAQs</h3><h4>Who can submit?</h4><ul> <li>Anyone who identifies as a queer Chinese womxn is welcome to submit!</li></ul><h4>What kinds of work are you looking for?</h4><ul> <li>We accept submissions in Fiction, Non-Fiction, Poetry, and Visual Art.</li> <li> Examples include (but are not limited to): <ul> <li> <i>Fiction:</i> short stories, experimental fiction, historical fiction, etc. </li> <li> <i>Non-Fiction:</i> essays, op-eds, memoirs, reviews, etc. </li> <li> <i>Poetry:</i> free verse, prose poetry, experimental/hybrid forms, etc. </li> <li> <i>Visual Art:</i> photography, paintings, illustrations, digital art, sculpture, etc. *For Visual Art submissions, please also include a brief artist statement. </li> </ul> </li></ul><h4>What language should I submit in? </h4><ul> <li>We accept works written in Chinese and/or English.</li></ul><h4>Are there word/ character limits?</h4><ul> <li>English submissions: up to 3,000 words</li> <li>Chinese submissions: up to 4,500 characters</li></ul><h4>Can I submit multiple pieces?</h4><ul> <li>Yes. You may submit 2-5 pieces in any combination of categories. Each submission form allows two uploads, but you are welcome to submit multiple forms.</li></ul><h4>Is there anything else I should know?</h4><ul> <li><i>Naming:</i> Please name your files as: Category_Name_Title</li> <li><i>Translation:</i> Our editing team will translate English pieces into Chinese and Chinese pieces into English. Both versions will be published in the zine. All translations will be sent to contributors for review and approval before publication.</li> <li><i>Compensation:</i> At this time, we are unable to offer monetary compensation. However, contributors will receive free physical copies of the issue. </li> <li><i>Copyright:</i> Authors retain full rights to their work. We will publish submissions only in the print and online editions of the zine.</li></ul><h4> More questions? Please contact <a href='mailto:betweenthelines@upwomxn.org'>betweenthelines@upwomxn.org</a></h4>"
     },
     "cn": {
       "title": "投稿页",
-      "highlight": "",
-      "body": "2027年 《言外之意》 的投稿将在 2026年8月 开放。届时请再次访问此页面以获取投稿链接。"
+      "highlight": "2027年 《言外之意》 的投稿将在 2026年8月 开放。届时请再次访问此页面以获取投稿链接。",
+      "body": "<h3>投稿常见问题</h3><h4>谁可以投稿?</h4><ul> <li>只要认同自己是酷儿华人女性，都欢迎投稿。</li></ul><h4>我们正在征稿的作品类型有哪些？</h4><ul> <li>我们接受以下四类作品：小说、非虚构、诗歌、视觉艺术。</li> <li> 以下为示例（不限于此）： <ul> <li> <b>小说类:</b> 短篇小说、实验小说、历史小说等 </li> <li> <b>非虚构类：</b> 随笔、评论文章、回忆录、书影评等 </li> <li> <b>诗歌类：</b> 自由诗、散文诗、实验/混合形式诗等 </li> <li> <b>视觉艺术类：</b> 摄影、绘画、插画、数字艺术、雕塑等*视觉艺术投稿请附上一段简短的艺术家陈述。 </li> </ul> </li></ul><h4>可以用什么语言投稿？ </h4><ul> <li>我们接受中文和/或英文作品。</li></ul><h4> 字数/字数限制是多少？</h4><ul> <li>英文作品：不超过 3,000 字</li> <li>中文作品：不超过 4,500 字</li></ul><h4>可以提交多篇作品吗？</h4><ul> <li>可以。您可以投稿 2–5 件作品，类别不限。每份投稿表格最多可上传 两份文件，如需提交更多，请填写多份表格。</li></ul><h4>还有其他需要注意的吗？</h4><ul> <li><b>格式要求:</b> 请按照以下格式命名文件：类别_姓名_标题</li> <li><b>翻译说明:</b> 编辑团队将对所有作品进行中英互译。中英文版本都会刊登在杂志上。译稿将在出版前发给作者确认与批准。</li> <li><b>稿酬说明:</b> 我们目前无法提供稿酬，但我们会向作者寄送一份纸质刊物。</li> <li><b>版权说明:</b> 作者保留其作品的全部版权。我们仅会在杂志的线上与印刷版本中发表作品。</li></ul><h4> 还有问题? 请联系： <a href='mailto:betweenthelines@upwomxn.org'>betweenthelines@upwomxn.org</a></h4>"
     }
   }
 }

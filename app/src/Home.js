@@ -10,8 +10,8 @@ function Home({ language }) {
 
   return (
     <>
-      <Highlight content={content.highlight} />
       <h2 dangerouslySetInnerHTML={{ __html: content.title }} />
+      <Highlight content={content.highlight} />
       <div
         className="body"
         dangerouslySetInnerHTML={{ __html: content.body }}
