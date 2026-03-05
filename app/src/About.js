@@ -1,6 +1,7 @@
 import { cleanPage } from "./utils/cleanPage";
 import { getPageInLanguage } from "./utils/getPageInLanguage";
 import { useOutletContext } from "react-router-dom";
+import Highlight from "./Highlight";
 
 function About({ language }) {
   var content = getPageInLanguage("about", useOutletContext(language));
@@ -9,10 +10,7 @@ function About({ language }) {
 
   return (
     <>
-      <div
-        className="highlight"
-        dangerouslySetInnerHTML={{ __html: content.highlight }}
-      ></div>
+      <Highlight content={content.highlight} />
       <h2 dangerouslySetInnerHTML={{ __html: content.title }} />
       <div
         className="body"
