@@ -24,26 +24,26 @@ function Layout() {
   }
 
   return (
-    <div className="app-container">
+    <div className="body-container">
       <div className="header">
         <Link className="site-title" to="/">
           {" "}
           Between the Lines Magazine{" "}
         </Link>
 
-        <NavMenu context={language} />
+        <NavMenu className="nav-menu" context={language} />
+        <div className="language-toggle">
+          <input
+            type="button"
+            id="toggle-language"
+            value="🌐"
+            onClick={() => toggleLanguage()}
+          />
+        </div>
       </div>
-
-      <div className="language-toggle">
-        <input
-          type="button"
-          id="toggle-language"
-          value="🌐"
-          onClick={() => toggleLanguage()}
-        />
+      <div className="content-container">
+        <Outlet context={language} />
       </div>
-
-      <Outlet context={language} />
     </div>
   );
 }
