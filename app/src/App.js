@@ -3,6 +3,7 @@ import Home from "./Home";
 import About from "./About";
 import Layout from "./Layout";
 import Submissions from "./Submissions";
+import "./style.css";
 
 function App() {
   return (

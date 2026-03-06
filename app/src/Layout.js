@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 import { Languages, defaultLanguage } from "./utils/languages";
 import { useEffect, useState } from "react";
 import NavMenu from "./NavMenu";
-import "./style.css";
+import Footer from "./Footer";
 
 function Layout() {
   var [language, setLanguage] = useState(defaultLanguage);
@@ -24,27 +24,33 @@ function Layout() {
   }
 
   return (
-    <div className="body-container">
-      <div className="header">
-        <Link className="site-title" to="/">
-          {" "}
-          Between the Lines Magazine{" "}
-        </Link>
+    <>
+      <div className="body-container">
+        <div className="header">
+          <Link className="site-title" to="/">
+            {" "}
+            Between the Lines Magazine{" "}
+          </Link>
 
-        <NavMenu className="nav-menu" context={language} />
-        <div className="language-toggle">
-          <input
-            type="button"
-            id="toggle-language"
-            value="🌐"
-            onClick={() => toggleLanguage()}
-          />
+          <NavMenu className="nav-menu" context={language} />
+
+          <div className="language-toggle">
+            <input
+              type="button"
+              id="toggle-language"
+              value="🌐"
+              onClick={() => toggleLanguage()}
+            />
+          </div>
         </div>
+
+        <div className="content-container">
+          <Outlet context={language} />
+        </div>
+
+        <Footer />
       </div>
-      <div className="content-container">
-        <Outlet context={language} />
-      </div>
-    </div>
+    </>
   );
 }
 export default Layout;
