@@ -41,11 +41,12 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
+  position: relative;
 
   & .nav-item {
-    padding-right: 15px;
-
+    padding-right: 20px;
     & a{
+      font-size: large;
       text-decoration: none;
       &:hover{
         color: var(--purple-light);
@@ -54,15 +55,22 @@ body {
   }
   & .language-toggle {
     position: absolute;
-    right: 10px;
+    right:15px;
   }
 }
 
+NavMenu {
+  background-color: red;
+}
+
 .footer {
-  padding: 1rem;
   padding-top: 2rem;
+  padding-bottom: 5rem;
   & .credit {
     float: right;
+    & a:hover{
+      color: var(--orange);
+    }
   }
 }
 
@@ -73,11 +81,6 @@ body {
   outline-style: solid;
   outline-color: var(--pink-dark);
   border-radius: 5px;
-}
-
-.nav-label {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .site-title {
@@ -95,4 +98,18 @@ body {
   width: 100%;
   height: 600px;
   object-position: top;
+}
+
+@media only screen and (max-width: 600px){
+  .body-container{
+    left: 5vw;
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .body-container{
+    left: 10vw;
+    width: 80vw;
+  }
 }
