@@ -2,3 +2,11 @@
   font-family: Noto;
   src: url("../public/fonts/NotoSansMono-VariableFont_wdth,wght.ttf");
 }
+
+:root {
+  --dark: rgb(25, 24, 24);
+  --light: rgb(235, 227, 227);
+  --purple-light: rgb(242, 220, 242);
+  --pink-dark: rgb(177, 69, 105);
+  --orange: rgb(253, 164, 85);
+}
