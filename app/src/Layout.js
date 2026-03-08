@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import { Languages, defaultLanguage } from "./utils/languages";
 import { useEffect, useState } from "react";
 import NavMenu from "./NavMenu";
@@ -27,18 +27,20 @@ function Layout() {
     <>
       <div className="body-container">
         <div className="header">
-          <Link className="site-title" to="/">
-            {" "}
-            Between the Lines Magazine{" "}
-          </Link>
+          <NavLink to="/" className="site-title">
+            <a>
+              <img src="logo.png" alt="logo" className="site-logo" />
+            </a>
+          </NavLink>
 
           <NavMenu className="nav-menu" context={language} />
 
-          <div className="language-toggle">
+          <div className="language-toggle" id="language-toggle-div">
             <input
-              type="button"
+              type="image"
+              alt="Toggle Language"
               id="toggle-language"
-              value="🌐"
+              src="language-switcher.png"
               onClick={() => toggleLanguage()}
             />
           </div>

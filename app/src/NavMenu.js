@@ -8,9 +8,9 @@ function NavMenu(language) {
     <>
       {menu.map((item) => {
         return (
-            <div className="nav-item" key={item.link}>
+          <div className="nav-item" key={item.link}>
             <Link to={item.link}>{item.label}</Link>
-            </div>
+          </div>
         );
       })}
     </>

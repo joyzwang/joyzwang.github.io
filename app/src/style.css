@@ -6,10 +6,12 @@ body {
   font-family: Noto;
   background-color: var(--dark);
   color: var(--light);
-  background-size: contain;
+  background-size: 100vw;
   background-attachment: fixed;
-  background-image: url('../public/background.png');
-  & a{
+  background-position: 50% 40%;
+  background-image: url("../public/background.png");
+  background-repeat: no-repeat;
+  & a {
     color: var(--light);
   }
 }
@@ -28,7 +30,7 @@ body {
   padding: 15px;
   background-color: var(--light);
   border-radius: 5px;
-  & a{
+  & a {
     color: var(--pink-dark);
     &:hover {
       color: var(--orange);
@@ -37,30 +39,43 @@ body {
 }
 
 .header {
-  padding: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 1rem 0 1rem 0;
   display: flex;
+  flex-flow: row wrap;
   position: relative;
+  align-items: center;
 
   & .nav-item {
     padding-right: 20px;
-    & a{
+    & a {
       font-size: large;
       text-decoration: none;
-      &:hover{
+      &:hover {
         color: var(--purple-light);
       }
     }
   }
-  & .language-toggle {
-    position: absolute;
-    right:15px;
-  }
 }
 
-NavMenu {
-  background-color: red;
+.nav-menu {
+  padding-left: 14rem;
+  padding-top: 7rem;
+  padding-right: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-toggle {
+  position: absolute;
+  right: 15px;
+}
+
+.site-logo {
+  padding-top: 0rem;
+  padding-bottom: -1rem;
+  width: 100px;
+  height: 100px;
 }
 
 .footer {
@@ -68,7 +83,7 @@ NavMenu {
   padding-bottom: 5rem;
   & .credit {
     float: right;
-    & a:hover{
+    & a:hover {
       color: var(--orange);
     }
   }
@@ -100,15 +115,15 @@ NavMenu {
   object-position: top;
 }
 
-@media only screen and (max-width: 600px){
-  .body-container{
+@media only screen and (max-width: 600px) {
+  .body-container {
     left: 5vw;
     width: 90vw;
   }
 }
 
-@media only screen and (max-width: 1000px){
-  .body-container{
+@media only screen and (max-width: 1000px) {
+  .body-container {
     left: 10vw;
     width: 80vw;
   }
