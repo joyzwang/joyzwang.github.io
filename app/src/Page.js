@@ -21,7 +21,7 @@ function Page({ name, pdf, language }) {
         dangerouslySetInnerHTML={{ __html: content.body }}
       ></div>
 
-      {pdf === "true" && (
+      {(pdf === "true") && (
         <div className="pdf-container">
           <embed id="pdf-viewer" src="pdf/test.pdf" type="application/pdf" />
         </div>
