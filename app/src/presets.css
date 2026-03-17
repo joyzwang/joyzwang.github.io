@@ -3,6 +3,11 @@
   src: url("../public/fonts/NotoSansMono-VariableFont_wdth,wght.ttf");
 }
 
+@font-face {
+  font-family: Mansalva;
+  src: url("../public/fonts/Mansalva-Regular.ttf");
+}
+
 :root {
   --dark: rgb(25, 24, 24);
   --light: rgb(235, 227, 227);

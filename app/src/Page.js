@@ -14,14 +14,14 @@ function Page({ name, pdf, language }) {
 
   return (
     <>
-      <h2 dangerouslySetInnerHTML={{ __html: content.title }} />
+      <h1 dangerouslySetInnerHTML={{ __html: content.title }} />
       <Highlight content={content.highlight} />
       <div
         className="body"
         dangerouslySetInnerHTML={{ __html: content.body }}
       ></div>
 
-      {(pdf === "true") && (
+      {pdf === "true" && (
         <div className="pdf-container">
           <embed id="pdf-viewer" src="pdf/test.pdf" type="application/pdf" />
         </div>
