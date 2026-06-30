@@ -6,7 +6,7 @@ import Highlight from "./Highlight";
 function Page({ name, pdf, language }) {
   var content = getPageInLanguage(name, useOutletContext(language));
 
-  if (!content) {
+  if (!content && !pdf) {
     return <h2>Page Not Found</h2>;
   }
 
@@ -14,16 +14,16 @@ function Page({ name, pdf, language }) {
 
   return (
     <>
-      <h1 dangerouslySetInnerHTML={{ __html: content.title }} />
+      {content && (<div><h1 dangerouslySetInnerHTML={{ __html: content.title }} />
       <Highlight content={content.highlight} />
       <div
         className="body"
         dangerouslySetInnerHTML={{ __html: content.body }}
-      ></div>
+      ></div></div>)}
 
       {pdf === "true" && (
         <div className="pdf-container">
-          <embed id="pdf-viewer" src="pdf/test.pdf" type="application/pdf" />
+          <embed id="pdf-viewer" src="pdf/btlm.pdf" type="application/pdf" />
         </div>
       )}
     </>

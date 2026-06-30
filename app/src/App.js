@@ -8,9 +8,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Page name="home" pdf="true" />} />
+          <Route index element={<Page name="home" />} />
           <Route path="about" element={<Page name="about" />} />
-          <Route path="submissions" element={<Page name="submissions" />} />
+          <Route path="read" element={<Page name="read" pdf="true" />} />
         </Route>
       </Routes>
     </BrowserRouter>
