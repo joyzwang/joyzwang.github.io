@@ -3,5 +3,10 @@
     "en": "About",
     "cn": "关于我们",
     "link": "/about"
+  },
+  {
+    "en": "Read",
+    "cn": "杂志",
+    "link": "/read"
   }
 ]
