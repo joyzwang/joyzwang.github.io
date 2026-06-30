@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ccb3c985.css",
-    "main.js": "/static/js/main.fcc017c3.js",
-    "static/media/background.png": "/static/media/background.b133b6bdca5d61181014.png",
-    "static/media/NotoSansMono-VariableFont_wdth,wght.ttf": "/static/media/NotoSansMono-VariableFont_wdth,wght.18b43571225f8dfbce5d.ttf",
-    "static/media/Mansalva-Regular.ttf": "/static/media/Mansalva-Regular.9bdeb649cf7cf4c0efc2.ttf",
-    "index.html": "/index.html",
-    "main.ccb3c985.css.map": "/static/css/main.ccb3c985.css.map",
-    "main.fcc017c3.js.map": "/static/js/main.fcc017c3.js.map"
+    "main.css": "/www.betweenthelines.it.com/static/css/main.e28c5ce9.css",
+    "main.js": "/www.betweenthelines.it.com/static/js/main.fcc017c3.js",
+    "static/media/background.png": "/www.betweenthelines.it.com/static/media/background.b133b6bdca5d61181014.png",
+    "static/media/NotoSansMono-VariableFont_wdth,wght.ttf": "/www.betweenthelines.it.com/static/media/NotoSansMono-VariableFont_wdth,wght.18b43571225f8dfbce5d.ttf",
+    "static/media/Mansalva-Regular.ttf": "/www.betweenthelines.it.com/static/media/Mansalva-Regular.9bdeb649cf7cf4c0efc2.ttf",
+    "index.html": "/www.betweenthelines.it.com/index.html",
+    "main.e28c5ce9.css.map": "/www.betweenthelines.it.com/static/css/main.e28c5ce9.css.map",
+    "main.fcc017c3.js.map": "/www.betweenthelines.it.com/static/js/main.fcc017c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccb3c985.css",
+    "static/css/main.e28c5ce9.css",
     "static/js/main.fcc017c3.js"
   ]
 }
