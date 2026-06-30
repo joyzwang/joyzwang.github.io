@@ -21,6 +21,15 @@ h1 {
   margin: 5px 0 20px 0;
 }
 
+h2 {
+  font-family: Mansalva;
+  margin: 0 0 20px 0;
+}
+
+img{
+  max-width: 100%;
+}
+
 .body-container {
   position: relative;
   left: 20vw;
@@ -41,6 +50,23 @@ h1 {
       color: var(--orange);
     }
   }
+}
+
+.column-container{
+  display: flex;
+}
+
+.column-container div{
+  margin: 0 10px 0 10px;
+  padding: 0;
+}
+
+.cover-container{
+  max-width: 20vw;
+}
+
+.text-container{
+  align-self: center;
 }
 
 .header {
@@ -108,6 +134,7 @@ h1 {
   padding-right: 3rem;
 }
 
+
 .pdf-container {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -125,9 +152,21 @@ h1 {
     left: 5vw;
     width: 90vw;
   }
+  .column-container{
+  display: block;
+    & div {
+      margin: 0;
+    }
+  }
+  .cover-container{
+  max-width: 90vw;
+}
 }
 
 @media only screen and (max-width: 1000px) {
+  body{
+    background-size: 100vh;
+  }
   .body-container {
     left: 10vw;
     width: 80vw;
