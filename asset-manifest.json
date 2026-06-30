@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.ccb3c985.css",
-    "main.js": "/static/js/main.445fdabd.js",
+    "main.js": "/static/js/main.fcc017c3.js",
     "static/media/background.png": "/static/media/background.b133b6bdca5d61181014.png",
     "static/media/NotoSansMono-VariableFont_wdth,wght.ttf": "/static/media/NotoSansMono-VariableFont_wdth,wght.18b43571225f8dfbce5d.ttf",
     "static/media/Mansalva-Regular.ttf": "/static/media/Mansalva-Regular.9bdeb649cf7cf4c0efc2.ttf",
     "index.html": "/index.html",
     "main.ccb3c985.css.map": "/static/css/main.ccb3c985.css.map",
-    "main.445fdabd.js.map": "/static/js/main.445fdabd.js.map"
+    "main.fcc017c3.js.map": "/static/js/main.fcc017c3.js.map"
   },
   "entrypoints": [
     "static/css/main.ccb3c985.css",
-    "static/js/main.445fdabd.js"
+    "static/js/main.fcc017c3.js"
   ]
 }
