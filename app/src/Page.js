@@ -22,9 +22,12 @@ function Page({ name, pdf, language }) {
       ></div></div>)}
 
       {pdf === "true" && (
+        <>
         <div className="pdf-container">
           <embed id="pdf-viewer" src="pdf/btlm.pdf" type="application/pdf" />
         </div>
+        If the embed does not work for you, please click <a href='https://drive.google.com/file/d/119VO13tUkD2nCPCIap4qsE_d8nDl2Jun/view'>here</a>.
+        </>
       )}
     </>
   );
